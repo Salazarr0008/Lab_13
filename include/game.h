@@ -18,8 +18,9 @@ public:
   /// @return the score from the most recent play, or 0 if never played
   int last_score() const;
 
-  /// Placeholder. Derived classes define their own play() this week.
-  void play();
+
+  virtual ~Game() = default;
+  virtual void play() = 0;
 
 protected:
   /// Record the score of a finished game.

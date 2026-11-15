@@ -19,7 +19,7 @@ public:
   int last_score() const;
 
 
-  virtual ~Game() = default;
+  virtual  ~Game() = default;
   virtual void play() = 0;
 
 protected:
